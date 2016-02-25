@@ -27,13 +27,20 @@ Setup redis-to-go
 `heroku addons:create redistogo`
 
 Get your redis url
+
 ` heroku config | grep REDISTOGO_URL`
+
 (can use —app option for specifying app like this ` heroku config —app aventura-deploy-server | grep REDISTOGO_URL`  but not needed)
 Redis url will be needed later for the ember-cli-deploy setup
 
 Set our config variables on heroku so that it can talk to S3 and redis
+
 `heroku config:set REDIS_HOST=gar.redistogo.com`
+
 `heroku config:set REDIS_PASS= garblygooppasslookitupurself`
+
 `heroku config:set REDIS_PORT=10270`
+
 `heroku config:set S3_SECRET=shhhsecretlookitup`
+
 `heroku config:set AWS_KEY=garblygoopkeylookitupurself`
