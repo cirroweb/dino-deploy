@@ -12,7 +12,7 @@
     "express": "4.13.3",
     "force-ssl-heroku": "^1.0.2",
     "node-ember-cli-deploy-redis": "^0.3.0",
-    "redis": "^2.3.0"
+    "redis": "2.3.0"
   },
   "engines": {
     "node": "0.12.7"
