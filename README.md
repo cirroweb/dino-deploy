@@ -14,7 +14,7 @@ add cheerio, ejs, express, 'node-ember-cli-deploy-redis’ and ‘redis’ to pa
 
 `git push origin master`
 
-heroku create aventura-deploy-server
+heroku create dino-deploy-server
 
 `git push heroku master`
 
@@ -30,7 +30,7 @@ Get your redis url
 
 ` heroku config | grep REDISTOGO_URL`
 
-(can use —app option for specifying app like this ` heroku config —app aventura-deploy-server | grep REDISTOGO_URL`  but not needed)
+(can use —app option for specifying app like this ` heroku config —app dino-deploy-server | grep REDISTOGO_URL`  but not needed)
 Redis url will be needed later for the ember-cli-deploy setup
 
 Set our config variables on heroku so that it can talk to S3 and redis
