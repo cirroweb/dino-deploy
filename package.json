@@ -10,6 +10,7 @@
     "cheerio": "^0.19.0",
     "ejs": "2.3.3",
     "express": "4.13.3",
+    "force-ssl-heroku": "^1.0.2",
     "node-ember-cli-deploy-redis": "^0.3.0",
     "redis": "^2.3.0"
   },
