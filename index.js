@@ -20,7 +20,7 @@ app.use('/*', emberDeploy('dinosaurJS:index', {
   host: process.env.REDIS_HOST,
   port: process.env.REDIS_PORT,
   password: process.env.REDIS_PASS}));
-
+ 
 app.get('/ping', pingHandler);
 
 app.listen(app.get('port'), function() {
