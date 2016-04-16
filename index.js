@@ -4,7 +4,7 @@ var express               = require('express'),
     url                   = require('url'),
     emberDeploy           = require('node-ember-cli-deploy-redis'),
     client                = require("redis").createClient(process.env.REDIS_PORT, process.env.REDIS_HOST),
-    forceSsl              = require('force-ssl-heroku');
+    // forceSsl              = require('force-ssl-heroku');
     EMBER_APP_NAME        = 'dinosaurJS';
 
 // Authorize our Redis Client -- could parse the password out of the redis url
@@ -13,7 +13,7 @@ client.auth(process.env.REDIS_PASS);
 
 app.set('port', (process.env.PORT || 5000));
 
-app.use(forceSsl);
+// app.use(forceSsl);
 app.use(express.static(__dirname + '/public'));
 
 app.use('/*', emberDeploy('dinosaurJS:index', {
