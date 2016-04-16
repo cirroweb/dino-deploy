@@ -37,10 +37,10 @@ Set our config variables on heroku so that it can talk to S3 and redis
 
 `heroku config:set REDIS_HOST=gar.redistogo.com`
 
-`heroku config:set REDIS_PASS= garblygooppasslookitupurself`
+`heroku config:set REDIS_PASS= ***************`
 
 `heroku config:set REDIS_PORT=10270`
 
-`heroku config:set S3_SECRET=shhhsecretlookitup`
+`heroku config:set S3_SECRET=**************'
 
-`heroku config:set AWS_KEY=garblygoopkeylookitupurself`
+`heroku config:set AWS_KEY=******************`
